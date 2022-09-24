@@ -43,7 +43,6 @@ socket.on('user-disconnected', userId => {
 })
 
 leaveButton.addEventListener('click', () => {
-  console.log("leaving call");
   socket.emit('leave-room');
   const videoGrid = document.getElementById("video-grid");
   videoGrid.innerHTML = "";
